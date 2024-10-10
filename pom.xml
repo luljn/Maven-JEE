@@ -13,6 +13,9 @@
 
   <!-- ======= Informations générales ======= -->
   <name>mon-appli</name>
+  <description>
+    Une simple application Java packagée avec Maven.
+  </description>
   <url>http://maven.apache.org</url>
 
   <!-- ===== Organisation ===== -->
@@ -35,14 +38,30 @@
   <!-- ===================================================== -->
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <apache.struts.version>6.4.0</apache.struts.version>
   </properties>
 
   <dependencies>
+
+    <!-- ===== JUnit ===== -->
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+
+    <!-- ===== Apache Struts ===== -->
+    <dependency>
+      <groupId>org.apache.struts</groupId>
+      <artifactId>struts2-core</artifactId>
+      <version>${apache.struts.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.struts</groupId>
+        <artifactId>struts2-json-plugin</artifactId>
+        <version>${apache.struts.version}</version>
+    </dependency>
+
   </dependencies>
 </project>
