@@ -66,6 +66,37 @@
   </dependencies>
 
   <!-- ===================================================== -->
+  <!-- Profils -->
+  <!-- ===================================================== -->
+  <profiles>
+
+    <profile>
+      <id>test</id>
+      <build>
+        <resources>
+          <resource>
+            <directory>src/main/resources/conf-test</directory>
+            <filtering>true</filtering>
+          </resource>
+        </resources>
+      </build>
+    </profile>
+
+    <profile>
+      <id>prod</id>
+      <build>
+        <resources>
+          <resource>
+            <directory>src/main/resources/conf-prod</directory>
+            <filtering>true</filtering>
+          </resource>
+        </resources>
+      </build>
+    </profile>
+
+  </profiles>
+
+  <!-- ===================================================== -->
   <!-- Build -->
   <!-- ===================================================== -->
   <build>
@@ -98,13 +129,6 @@
         </configuration>
       </plugin>
     </plugins>
-
-    <resources>
-      <resource>
-        <directory>src/main/resources</directory>
-        <filtering>true</filtering>
-      </resource>
-    </resources>
 
   </build>
 
