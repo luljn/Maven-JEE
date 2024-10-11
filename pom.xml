@@ -72,6 +72,8 @@
 
     <directory>${project.basedir}/target</directory>
 
+    
+
     <!-- Gestion des plugins (version) -->
     <pluginManagement>
       <plugins>
